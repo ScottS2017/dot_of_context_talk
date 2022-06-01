@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NeonStyleButton extends StatelessWidget {
+  /// Creates an instance of [NeonStyleButton].
   const NeonStyleButton({
     Key? key,
     required this.backgroundIsDark,
@@ -10,10 +11,19 @@ class NeonStyleButton extends StatelessWidget {
     required this.callback,
   }) : super(key: key);
 
+  /// The size of the "glow", which is actually a shadow.
   final double shadowSize;
+
+  /// The text to display in the button.
   final String text;
+
+  /// The base color for the button.
   final Color color;
+
+  /// Whether or not to render the button on a black background.
   final bool backgroundIsDark;
+
+  /// The callback to be invoked upon pressing the button.
   final VoidCallback callback;
 
   @override
